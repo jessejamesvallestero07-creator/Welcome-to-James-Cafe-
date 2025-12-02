@@ -29,7 +29,7 @@ int main() {
     while (true) {
         cout << "\n--- MENU ---\n";
         for (int i = 0; i < menu.size(); i++)
-            cout << i + 1 << ") " << menu[i].name << " - Php" << menu[i].price << "\n";
+            cout << i + 1 << ") " << menu[i].name << " - ₱" << menu[i].price << "\n";
         cout << "0) Finish ordering\n";
 
         int choice;
@@ -76,3 +76,4 @@ int main() {
     for (int i = 0; i < menu.size(); i++)
         cout << menu[i].name << ": " << menu[i].stock << " left\n";
 }
+
