@@ -1,4 +1,15 @@
-{
+#include <iostream>
+#include <vector>
+#include <string>
+using namespace std;
+
+struct Item {
+    string name;
+    double price;
+    int stock;
+};
+
+int main() {
     vector<Item> menu = {
         {"Cappuccino", 140, 20},
         {"Latte", 150, 20},
@@ -65,3 +76,4 @@
     for (int i = 0; i < menu.size(); i++)
         cout << menu[i].name << ": " << menu[i].stock << " left\n";
 }
+
